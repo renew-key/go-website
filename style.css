@@ -41,6 +41,7 @@ header nav{
 
 header nav ul{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 
@@ -216,4 +217,9 @@ div.competition #piechart{
   .taiwan ul {
     margin-left: 2rem;
   }
-  
+
+  @media screen and (max-width:768px){
+    header nav ul{
+        flex-direction: column;
+    }
+  }
